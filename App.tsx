@@ -32,6 +32,8 @@ import NewsletterChef from './components/pages/NewsletterChef';
 import SloganStitcher from './components/pages/SloganStitcher';
 import SceneSeed from './components/pages/SceneSeed';
 import CharacterVoiceGenerator from './components/pages/CharacterVoiceGenerator';
+import { Analytics } from "@vercel/analytics/react";
+
 
 const App: React.FC = () => {
   return (
@@ -68,6 +70,7 @@ const App: React.FC = () => {
         <Route path="/scene-seed" element={<SceneSeed />} />
         <Route path="/character-voice-generator" element={<CharacterVoiceGenerator />} />
       </Routes>
+      </Analytics>
     </MainLayout>
   );
 };
