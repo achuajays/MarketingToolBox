@@ -70,7 +70,7 @@ const App: React.FC = () => {
         <Route path="/scene-seed" element={<SceneSeed />} />
         <Route path="/character-voice-generator" element={<CharacterVoiceGenerator />} />
       </Routes>
-      </Analytics>
+      <Analytics/>    
     </MainLayout>
   );
 };
