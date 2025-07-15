@@ -7,7 +7,7 @@ const Sidebar: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className="w-64 bg-white border-r border-slate-200 flex flex-col p-4">
+    <div className="w-64 bg-white border-r border-slate-200 flex flex-col p-4 h-full overflow-hidden">
       <div className="flex items-center gap-3 mb-8 px-2">
          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
         </div>
         <h1 className="text-xl font-bold text-slate-800">AI Toolkit</h1>
       </div>
-      <nav className="flex flex-col gap-2">
+      <nav className="flex flex-col gap-2 overflow-y-auto flex-1 pr-2">
         <NavLink
           to="/"
           className={({ isActive }) =>
