@@ -20,12 +20,12 @@ const Sidebar: React.FC<SidebarProps> = ({ onClose }) => {
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b border-slate-200 lg:border-b-0">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
-              <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v1h-1.5a.5.5 0 00-.5.5v1.5a.5.5 0 00.5.5H15v4.5a.5.5 0 00.5.5h1.5a.5.5 0 00.5-.5V5a2 2 0 012-2h-1.5a.5.5 0 00-.5.5v1.5a.5.5 0 00.5.5H19V16a2 2 0 01-2 2H3a2 2 0 01-2-2V5a2 2 0 012-2h1.5a.5.5 0 00.5-.5V3a.5.5 0 00-.5-.5H3a2 2 0 01-2 2v11a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2h-1.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H15a2 2 0 00-2-2H7a2 2 0 00-2 2z" />
+          <div className="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
             </svg>
           </div>
-          <h1 className="text-xl font-bold text-slate-800">AI Toolkit</h1>
+          <h1 className="text-xl font-bold text-slate-800">MarketingToolBox</h1>
         </div>
         
         {/* Close button for mobile */}

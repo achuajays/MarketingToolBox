@@ -39,6 +39,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
             </svg>
           </button>
           <h1 className="text-lg font-semibold text-slate-800">AI Toolkit</h1>
+          <h1 className="text-lg font-semibold text-slate-800">MarketingToolBox</h1>
           <div className="w-10" /> {/* Spacer for centering */}
         </div>
 
