@@ -20,20 +20,6 @@ import ToneShifter from './components/pages/ToneShifter';
 import ProductDescriptionStylist from './components/pages/ProductDescriptionStylist';
 import CharacterDialogForge from './components/pages/CharacterDialogForge';
 import QuoteRecast from './components/pages/QuoteRecast';
-import PodcastTitleGenerator from './components/pages/PodcastTitleGenerator';
-import ContentClusterPlanner from './components/pages/ContentClusterPlanner';
-import ReelHooks from './components/pages/ReelHooks';
-import PenName from './components/pages/PenName';
-import MicCheck from './components/pages/MicCheck';
-import PromptBooster from './components/pages/PromptBooster';
-import CoverBot from './components/pages/CoverBot';
-import TagDrop from './components/pages/TagDrop';
-import NewsletterChef from './components/pages/NewsletterChef';
-import SloganStitcher from './components/pages/SloganStitcher';
-import SceneSeed from './components/pages/SceneSeed';
-import CharacterVoiceGenerator from './components/pages/CharacterVoiceGenerator';
-import { Analytics } from "@vercel/analytics/react";
-
 
 const App: React.FC = () => {
   return (
@@ -57,20 +43,7 @@ const App: React.FC = () => {
         <Route path="/product-description-stylist" element={<ProductDescriptionStylist />} />
         <Route path="/character-dialog-forge" element={<CharacterDialogForge />} />
         <Route path="/quote-recast" element={<QuoteRecast />} />
-        <Route path="/podcast-title-generator" element={<PodcastTitleGenerator />} />
-        <Route path="/content-cluster-planner" element={<ContentClusterPlanner />} />
-        <Route path="/reel-hooks" element={<ReelHooks />} />
-        <Route path="/pen-name" element={<PenName />} />
-        <Route path="/mic-check" element={<MicCheck />} />
-        <Route path="/prompt-booster" element={<PromptBooster />} />
-        <Route path="/cover-bot" element={<CoverBot />} />
-        <Route path="/tag-drop" element={<TagDrop />} />
-        <Route path="/newsletter-chef" element={<NewsletterChef />} />
-        <Route path="/slogan-stitcher" element={<SloganStitcher />} />
-        <Route path="/scene-seed" element={<SceneSeed />} />
-        <Route path="/character-voice-generator" element={<CharacterVoiceGenerator />} />
       </Routes>
-      <Analytics/>    
     </MainLayout>
   );
 };

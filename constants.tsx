@@ -98,59 +98,6 @@ const RefreshIcon: React.FC<{className?: string}> = ({ className }) => (
     </svg>
 );
 
-const PodcastIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
-    </svg>
-);
-
-const CalendarIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0h6m-6 0l-1 12a2 2 0 002 2h6a2 2 0 002-2L16 7m-6 0V3a2 2 0 012-2h4a2 2 0 012 2v4" />
-    </svg>
-);
-
-const VideoIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-    </svg>
-);
-
-const UserIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-    </svg>
-);
-
-const LightningIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-    </svg>
-);
-
-const PhotographIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-);
-
-const NewspaperIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-    </svg>
-);
-
-const SpeakerphoneIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-    </svg>
-);
-
-const ChatIcon: React.FC<{className?: string}> = ({ className }) => (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-    </svg>
-);
 
 export const NAV_ITEMS: NavItem[] = [
   { name: 'Art Prompt Builder', path: '/art-prompt-builder', icon: <PaintBrushIcon className="h-5 w-5" /> },
@@ -170,16 +117,4 @@ export const NAV_ITEMS: NavItem[] = [
   { name: 'Product Descriptions', path: '/product-description-stylist', icon: <TagIcon className="h-5 w-5" /> },
   { name: 'Character Dialog Forge', path: '/character-dialog-forge', icon: <UserGroupIcon className="h-5 w-5" /> },
   { name: 'QuoteRecast', path: '/quote-recast', icon: <RefreshIcon className="h-5 w-5" /> },
-  { name: 'Podcast Title Generator', path: '/podcast-title-generator', icon: <PodcastIcon className="h-5 w-5" /> },
-  { name: 'Content Cluster Planner', path: '/content-cluster-planner', icon: <CalendarIcon className="h-5 w-5" /> },
-  { name: 'ReelHooks', path: '/reel-hooks', icon: <VideoIcon className="h-5 w-5" /> },
-  { name: 'PenName', path: '/pen-name', icon: <UserIcon className="h-5 w-5" /> },
-  { name: 'MicCheck', path: '/mic-check', icon: <PodcastIcon className="h-5 w-5" /> },
-  { name: 'PromptBooster', path: '/prompt-booster', icon: <LightningIcon className="h-5 w-5" /> },
-  { name: 'CoverBot', path: '/cover-bot', icon: <PhotographIcon className="h-5 w-5" /> },
-  { name: 'TagDrop', path: '/tag-drop', icon: <MusicNoteIcon className="h-5 w-5" /> },
-  { name: 'Newsletter Chef', path: '/newsletter-chef', icon: <NewspaperIcon className="h-5 w-5" /> },
-  { name: 'Slogan Stitcher', path: '/slogan-stitcher', icon: <SpeakerphoneIcon className="h-5 w-5" /> },
-  { name: 'SceneSeed', path: '/scene-seed', icon: <VideoIcon className="h-5 w-5" /> },
-  { name: 'Character Voice Generator', path: '/character-voice-generator', icon: <ChatIcon className="h-5 w-5" /> },
 ];
